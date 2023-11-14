@@ -43,9 +43,10 @@ console.log('---- 2. For Of loop ----');
 let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
+console.log('Some stars:')
 for (let starName of stars){
   starName+
-  console.log('Some stars:', starName);
+  console.log(starName);
 }
 
 
@@ -54,7 +55,18 @@ console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
-
+let i = -1
+while (i <stars.length-1){
+  i++;
+  console.log(stars[i]);
+}
+//OR alternate solution:
+console.log('Some stars using alternate while:');
+i = 0
+while (i <stars.length){
+  console.log(stars[i]);
+  i++;
+}
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
 
